@@ -20,15 +20,15 @@
         <! --MENU -- >
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <div class="content">
-        <div class="sobreMi">
+        <section class="sobreMi" id="sobreMi">
             <img id="myPic" src="https://frgp.cvg.utn.edu.ar/pluginfile.php/294367/user/icon/snap/f1?rev=8105895" alt="foto_perfil">
             <div class="container">
                 <h2 class="sobreMitxt">Hola!</h2>
@@ -38,8 +38,8 @@
                     En mis tiempos libres me gusta jugar videojuegos o escuchar musica.
                 </p>
             </div>
-        </div>
-        <div class="Habilidades">
+        </section>
+        <section class="Habilidades" id="Habilidades">
             <h2>Habilidades:</h2>
             <div class="container_lenguajes">
                 <div class="lenguaje">
@@ -53,8 +53,8 @@
                     <img src="javascript.png" alt="javascript">
                 </div>
             </div>
-        </div>
-        <div class="Proyectos">
+        </section>
+        <section class="Proyectos" id="Proyectos">
             <h2>Proyectos</h2>
             <div class="container-card">
                 <div class="card" id="granCerdo">
@@ -75,9 +75,19 @@
                     <p>Sistema de gestión de articulos desarrollado en C# .NET</p>
                 </div>
             </div>
-        </div>
-        <footer class="Contacto">
+        </section>
+        <section class="Contacto" id="Contacto">
             <h2>Contacto</h2>
+            <div class="container-contacto">
+                <div class="formulario">
+                    <input type="text" id="email" name="email" placeholder="Dirección de Email">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje">
+                </div>
+            </div>
+        </section>
+        <footer>
             <div class="container-contacto">
                 <div class="contacto">
                     <a href="#" class="fa fa-linkedin"> </a>
@@ -86,6 +96,7 @@
                     <a href="#" class="fa fa-github"> </a>
                 </div>
             </div>
+
         </footer>
     </div>
 </body>
