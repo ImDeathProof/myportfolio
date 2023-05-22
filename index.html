@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="logo">
+        <a href="#sobreMi" class="logo">
             <img src="logo.png" alt:"logo">
             <h2>Elias García</h2>
-        </div>
+        </a>
         <! --MENU -- >
         <nav class="navegacion">
             <ul class="menu">
@@ -79,24 +79,26 @@
         <section class="Contacto" id="Contacto">
             <h2>Contacto</h2>
             <div class="container-contacto">
-                <div class="formulario">
-                    <input type="text" id="email" name="email" placeholder="Dirección de Email">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                    <input type="text" id="telefono" name="telefono" placeholder="Telefono">
-                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje">
+                <form action="/enviar-mensaje" method="POST">
+                    <input type="text" id="email" name="email" placeholder="Dirección de Email"></input>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
+                    <input type="text" id="telefono" name="telefono" placeholder="Telefono"></input>
+                    <textarea type="text" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                </form>
+                <div class="center">
+                    <button class="btn_enviar"><span>Enviar</span></button>
                 </div>
             </div>
         </section>
+        <section class="social_media_btns">
+                <a href="#" class="fa fa-linkedin"> </a>
+                <a href="#" class="fa fa-github"> </a>
+        </section>
         <footer>
-            <div class="container-contacto">
-                <div class="contacto">
-                    <a href="#" class="fa fa-linkedin"> </a>
-                </div>
-                <div class="contacto">
-                    <a href="#" class="fa fa-github"> </a>
-                </div>
+            <div class="Copyright">
+                <h4>© Copyright 2023</h3>
+                <p>Built by Elias Garcia</p>
             </div>
-
         </footer>
     </div>
 </body>
