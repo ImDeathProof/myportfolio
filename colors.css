@@ -1,0 +1,25 @@
+:root{
+    --color-secundario: #0D264D;
+    --color-acento: #00378F;
+    --color-acento2: #002B6E ;
+    --color-acento3: #b4d2e6;
+    --color-texto: #ACCCFF;
+    --color-texto2: #7DAFFF;
+    --color-text3: #0a192f;
+    
+    --color-boton: #ACCCFF  ;
+    --color-boton-hover: #1771FF ;
+
+    --color-base: #0a192f;
+    --color-base2: #0a192f;
+    --color-base3: #172A45;
+    --color-base4: #2e4a76;
+    --color-base5: #3D5A8C;
+
+    --color-base4-transparente: rgba(46, 74, 118, 0.1);
+
+    --color-d1: #00ffff;
+    --color-d2: #ff00ff;
+    --color-d3: #ffff00;
+
+}

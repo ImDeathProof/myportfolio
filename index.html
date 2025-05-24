@@ -5,112 +5,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <! --Estilos de CSS -- >
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
     <! --Favicon -- >
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="functions.js"></script>
-    <title> Portfolio | Elias Garcia </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
-    <body>
-        <header>
-            <a href="#sobreMi" class="logo">
-                <img src="logo.png" alt:"logo">
-                <h2>Elias García</h2>
-            </a>
+    <script src="https://kit.fontawesome.com/8929a508dd.js" crossorigin="anonymous"></script>
+    <title> Portfolio | Elias Garcia </title>
+</head>
+<body class="body">
+    <header>
+        <a href="#SobreMi" class="logo">
+            <h2>Elias Garcia</h2>
+        </a>
+        <nav class="">
             <! --MENU -- >
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="#sobreMi">Sobre mi</a></li>
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#Proyectos">Proyectos</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="content">
-            <section class="sobreMi" id="sobreMi">
-                <img id="myPic" src="https://frgp.cvg.utn.edu.ar/pluginfile.php/294367/user/icon/snap/f1?rev=8105895" alt="foto_perfil">
-                <div class="container">
-                    <h2 class="sobreMitxt">Hola!</h2>
-                    <p class="sobreMitxt">Mi nombre es Elias García,
-                        soy estudiante de la Tecnicatura Universitaria en Programación
-                        en la Universidad Tecnologica Nacional (FRGP).
-                        Me gusta el desarrollo de aplicaciones de escritorio y de videojuegos.
-                        En mis tiempos libres me gusta jugar videojuegos o escuchar musica.
-                    </p>
-                </div>
-            </section>
-            <section class="Habilidades" id="Habilidades">
-                <h2>Habilidades:</h2>
-                <div class="container_lenguajes">
-                    <div class="lenguaje">
-                        <img src="Csharp.png" alt="c#">
-                        <img src="C++.png" alt="c++">
-                        <img src="SQL.png" alt="sql">
-                    </div>
-                    <div class="lenguaje">
-                        <img src="css.png" alt="css">
-                        <img src="html.png" alt="html">
-                        <img src="javascript.png" alt="javascript">
-                    </div>
-                </div>
-            </section>
-            <section class="Proyectos" id="Proyectos">
-                <h2>Proyectos</h2>
-                <div class="container-card">
-                    <div class="card" id="granCerdo">
-                        <img src="granCerdo.png" alt="Gran Cerdo">
-                        <h4>Gran Cerdo</h4>
-                        <p>Juego de dados en consola.
-                            Desarrollado en C++
-                        </p>
-                        <label class="btn_ver" onclick="redirection(1)">Ver</label>
-                    </div>
-                    <div class="card" id="bomberMan">
-                        <img src="Bomberman.png" alt="Bomber Man">
-                        <h4>Bomber Man</h4>
-                        <p>Video juego desarrollado en C++ utilizando SFML </p>
-                        <label class="btn_ver" onclick="redirection(2)">Ver</label>
-                    </div>
-                    <div class="card" id="gestionArticulos">
-                        <img src="gArticulos.png" alt="Gestion Articulos">
-                        <h4>Gestión Articulos</h4>
-                        <p>Sistema de gestión de articulos desarrollado en C# .NET</p>
-                        <label class="btn_ver" onclick="redirection(3)">Ver</label>
-                    </div>
-                    <div class="card" id="almacenBebidas">
-                        <img src="AlmacenBebidas.png" alt="Almacen Bebidas">
-                        <h4>Almacen de Bebidas</h4>
-                        <p>Web API de un e-commerce de bebidas desarrollado con C# y ASP.NET</p>
-                        <label class="btn_ver" onclick="redirection(4)">Ver</label>
-                    </div>
-                </div>
-            </section>
-            <section class="Contacto" id="Contacto">
-            <h2>Contacto</h2>
-            <div class="container-contacto">
-                <form action="/enviar-mensaje" method="POST">
-                    <input type="text" id="email" name="email" placeholder="Dirección de Email"></input>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
-                    <input type="text" id="telefono" name="telefono" placeholder="Telefono"></input>
-                    <textarea type="text" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                </form>
-                <div class="center">
-                    <button class="btn_enviar"><span>Enviar</span></button>
-                </div>
-            </div>
-            </section>
-            <section class="social_media_btns">
-                <a href="https://www.linkedin.com/in/elias-garcia-083437239/" class="fa fa-linkedin"> </a>
-                <a href="https://github.com/ImDeathProof?tab=repositories" class="fa fa-github"> </a>
-            </section>
-            <footer>
-            <div class="Copyright">
-                <h4>© Copyright 2023</h3>
-                <p>Built by Elias Garcia</p>
-            </div>
-            </footer>
+            <ul class="menu">
+                <li><a href="#SobreMi">Sobre mi</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sobre-mi container" id="SobreMi">
+        <div class="sobre-mi-texto-container">
+            <h2 class="sobre-mi-titulo">¡Hola!</h2>
+            <p class="sobre-mi-resumen">
+                Soy Elías y te doy la bienvenida a mi portafolio, aca comparto algunos de mis proyectos donde aplico mis habilidades técnicas y mi creatividad para resolver problemas.
+                Te invito a darle un vistazo a <a href="#Proyectos">mis trabajos</a> y a conocerme un poco más.
+            </p>
         </div>
-    </body>
+        <div class="sobre-mi-foto-container">
+            <img class="sobre-mi-avatar" id="myPic" src="Avatar.jpg" alt="foto_perfil">
+        </div>
+    </section>
+    <section class="habilidades container" id="Habilidades">
+        <h2 class="titulo">Habilidades y conocimientos</h2>
+        <div class="lenguajes-container">
+            <div class="lenguaje">
+                <i class="devicon-css3-plain"></i>
+                <h5>CSS</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-html5-plain"></i>
+                <h5>HTML</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-javascript-plain"></i>
+                <h5>JavaScript</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-java-plain"></i>
+                <h5>Java</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-csharp-plain"></i>
+                <h5>C#</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-cplusplus-plain"></i>
+                <h5>C++</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+                <h5>SQL</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-bootstrap-plain"></i>
+                <h5>Bootstrap</h5>
+            </div>
+            <div class="lenguaje">
+                <i class="devicon-dotnetcore-plain"></i>
+                <h5>.NET</h5>
+            </div>
+        </div>
+        <div class="softskills-container">
+            <div class="softskill">
+                <h5>Comunicación</h5>
+            </div>
+            <div class="softskill">
+                <h5>Trabajo en equipo</h5>
+            </div>
+            <div class="softskill">
+                <h5>Resolución de problemas</h5>
+            </div>
+            <div class="softskill">
+                <h5>Adaptabilidad</h5>
+            </div>
+            <div class="softskill">
+                <h5>Gestión de tiempo</h5>
+            </div>
+            <div class="softskill">
+                <h5>Creatividad</h5>
+            </div>
+            <div class="softskill">
+                <h5>Aprendizaje continuo</h5>
+            </div>
+
+        </div>
+    </section>
+    <section class="proyectos container" id="Proyectos">
+        <h2 class="titulo">Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="granCerdo.png" alt="Proyecto gran cerdo">
+                </div>
+                <div class="tarjeta-descripcion">
+                    <h3>Gran Cerdo</h3>
+                    <p>Juego de dados realizado en consola.</p>
+                    <div class="tarjeta-icons">
+                        <i class="devicon-cplusplus-plain"></i>
+                    </div>
+                </div>
+                <div class="tarjeta-boton">
+                    <a href="https://github.com/ImDeathProof/GranCerdo"><i class="devicon-github-plain"></i>Ver en GitHub</a>
+                </div>
+            </div>
+
+            <div class="proyecto-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="Bomberman.png" alt="Proyecto Bomberman">
+                </div>
+                <div class="tarjeta-descripcion">
+                    <h3>Bomberman</h3>
+                    <p>Replica del clasico videojuego Bomberman. Creado utilizando la libreria SFML.</p>
+                    <div class="tarjeta-icons">
+                        <i class="devicon-cplusplus-plain"></i>
+                    </div>
+                </div>
+                <div class="tarjeta-boton">
+                    <a href="https://github.com/ImDeathProof/BomberMan"><i class="devicon-github-plain"></i>Ver en GitHub</a>
+                </div>
+            </div>
+            
+            <div class="proyecto-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="gArticulos.png" alt="Proyecto gestor de articulos">
+                </div>
+                <div class="tarjeta-descripcion">
+                    <h3>Gestor de articulos</h3>
+                    <p>Aplicación CRUD de gestión de articulos.</p>
+                    <div class="tarjeta-icons">
+                        <i class="devicon-csharp-plain"></i>
+                        <i class="devicon-dot-net-plain"></i>
+                        <i class="devicon-microsoftsqlserver-plain"></i>
+                    </div>
+                </div>
+                <div class="tarjeta-boton">
+                    <a href="https://github.com/ImDeathProof/Prog3-TP2"><i class="devicon-github-plain"></i>Ver en GitHub</a>
+                </div>
+            </div>
+
+            
+            <div class="proyecto-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="AlmacenBebidas.png" alt="Proyecto almacen de bebidas">
+                </div>
+                <div class="tarjeta-descripcion">
+                    <h3>Almacen de bebidas</h3>
+                    <p>E-commerce de bebidas con carrito de compras y gestión administrativa.</p>
+                    <div class="tarjeta-icons">
+                        <i class="devicon-csharp-plain"></i>
+                        <i class="devicon-dot-net-plain"></i>
+                        <i class="devicon-microsoftsqlserver-plain"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                    </div>
+                </div>
+                <div class="tarjeta-boton">
+                    <a href="https://github.com/ImDeathProof/TPFinal-Grupo18"><i class="devicon-github-plain"></i>Ver en GitHub</a>
+                </div>
+            </div>
+            
+            <div class="proyecto-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="HomeBanking.png" alt="Proyecto home banking">
+                </div>
+                <div class="tarjeta-descripcion">
+                    <h3>FRGP Bank</h3>
+                    <p>Sistema estilo Home Banking completo.</p>
+                    <div class="tarjeta-icons">
+                        <i class="devicon-java-plain"></i>
+                        <i class="devicon-mysql-plain-wordmark"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                    </div>
+                </div>
+                <div class="tarjeta-boton">
+                    <a href="https://github.com/ImDeathProof/TPINT_GRUPO_9_LAB4"><i class="devicon-github-plain"></i>Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto container" id="Contacto">
+        <div class="contacto-formulario">
+            <h2>Contacto</h2>
+            <p>Gracias por llegar hasta aca, si te interesa podes contactarme completando el siguiente formulario.</p>
+            <form action="https://formspree.io/f/eliasngarcia.98@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="tu@email.com" required>
+                <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="social container">
+                <a href="https://www.linkedin.com/in/elias-garcia-083437239/"><i class="devicon-linkedin-plain"></i></a>
+                <a href="https://github.com/ImDeathProof?tab=repositories"><i class="devicon-github-plain"></i></a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Elias Garcia. Todos los derechos reservados.</p>
+    </footer>
+    <!-- BOTON PARA VOLVER ARRIBA -->
+    <button id="btn-volver-arriba"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="functions.js"></script>
+</body>
 </html>

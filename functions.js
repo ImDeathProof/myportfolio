@@ -1,12 +1,17 @@
-function redirection(tipo){
-    if(tipo == 1){
-        window.location.href = "https://github.com/ImDeathProof/GranCerdo"
+// Mostrar u ocultar el botón al hacer scroll
+window.onscroll = function() {
+    const btn = document.getElementById("btn-volver-arriba");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+    } else {
+    btn.style.display = "none";
     }
-    else if(tipo == 2){
-        window.location.href = "https://github.com/ImDeathProof/BomberMan"
-    }else if(tipo == 3){
-        window.location.href = "https://github.com/ImDeathProof/Prog3-TP2"
-    }else if(tipo == 4){
-        window.location.href = "https://github.com/ImDeathProof/TPFinal-Grupo18"
-    }
-}
+};
+
+// Desplazamiento suave al hacer clic
+document.getElementById("btn-volver-arriba").addEventListener("click", function() {
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth"  // Efecto suave
+    });
+});
